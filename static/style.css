@@ -1,0 +1,534 @@
+.custom-navbar {
+    background-color: rgba(255, 248, 248, 0.007); /* Transparansi sangat tinggi */
+    backdrop-filter: blur(5px); /* Efek blur latar belakang */
+    color: rgb(253, 253, 253); /* Warna teks */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pastikan navbar berada di atas gambar */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white; /* Warna teks putih untuk brand dan link navbar */
+}
+
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link:active,
+.custom-navbar .nav-link:hover {
+    color: white; /* Warna teks putih saat link aktif atau di-hover */
+}
+
+.caption {
+    width: 100%;
+    height: 500px;
+    font-size: xx-large;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('../static/assets/coffe_depan.png');
+    background-position: center 30%;
+    background-size: cover;
+    color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative; /* Agar caption berada di bawah navbar */
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.home__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home__data {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.home__title {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Aturan umum untuk gambar di section home */
+.home img {
+    max-width: 100%; /* Membatasi lebar maksimum gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 10px; /* Menambahkan border radius jika diinginkan */
+}
+
+/* Aturan khusus untuk gambar kopi */
+.home__img {
+    max-width: 400px; /* Sesuaikan dengan ukuran yang diinginkan */
+    max-height: 400px;
+    height: auto; /* Menjaga rasio aspek gambar */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button {
+    padding: 10px 20px;
+    background-color: rgb(15, 87, 5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: rgb(22, 170, 3);
+}
+
+.card-title {
+    font-size: 2em; /* Perbesar ukuran font title */
+    font-family: 'Caprasimo', sans-serif;
+    text-align: center; /* Tambahkan ini untuk membuat teks rata tengah */
+}
+
+.card-subtitle {
+    text-align: center; /* Tambahkan ini untuk membuat teks rata tengah */
+    font-size: 1.2em;
+    color: #222; /* Opsional: mengatur ukuran font untuk subtitle */
+}
+
+.card-body {
+    padding: 20px; /* Tambahkan padding untuk card-body */
+    text-align: center; /* Tambahkan ini untuk membuat teks rata tengah */
+}
+
+.card-img {
+    width: 300px;
+    height: 300px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+    object-fit:scale-down;
+}
+
+.card {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: none; /* Menghilangkan border */
+    border-radius: 0; /* Opsional: Mengatur radius border menjadi 0 */
+    padding-top: 40px; /* Tambahkan padding atas */
+    padding-bottom: 40px; /* Tambahkan padding bawah */
+    margin: 40px auto; /* Tambahkan margin atas dan bawah */
+}
+
+.card-text{
+    color: #222;
+    font-size: medium;
+    font-weight: 400;
+}
+
+h6 {
+    color: rgb(22, 170, 3);
+}
+
+.navbar-brand {
+    margin-left: 30px;
+    font-family: "Dancing Script", cursive;
+    font-size: x-large;
+}
+
+.one-sub-caption {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.caption-two {
+    width: 100%;
+    height: 300px;
+    color: rgb(28, 88, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.sub-caption-two {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.contact-under {
+    padding: 50px 0; /* Padding atas dan bawah */
+}
+
+.contact__container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Spasi antara elemen */
+    align-items: center; /* Vertikal rata tengah */
+    max-width: 1200px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Tengah-tengah kontainer */
+    padding: 0 20px; /* Padding kiri dan kanan */
+}
+
+.contact__data {
+    flex: 1; /* Elemen ini akan mengambil seluruh ruang yang tersedia */
+}
+
+.section-subtitle {
+    font-size: 20px; /* Ukuran font subtitle */
+    color: #333; /* Warna font subtitle */
+    margin-bottom: 10px; /* Margin bawah subtitle */
+}
+
+.section-title {
+    font-size: 36px; /* Ukuran font title */
+    color: #222; /* Warna font title */
+    margin-bottom: 20px; /* Margin bawah title */
+}
+
+.contact__description {
+    font-size: 18px; /* Ukuran font deskripsi */
+    color: #555; /* Warna font deskripsi */
+    line-height: 1.6; /* Jarak antar baris */
+    margin-bottom: 30px; /* Margin bawah deskripsi */
+}
+
+.contact__button {
+    flex: 0 0 auto; /* Elemen ini tidak akan memperluas ruang */
+}
+
+.marketplace__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.marketplace__buttons_inti {
+    display: flex;
+    gap: 10px; /* Jarak antar tombol, sesuaikan sesuai kebutuhan */
+    justify-content: center; /* Menyusun tombol di tengah */
+    align-items: center; /* Menyusun tombol secara vertikal di tengah */
+}
+
+.marketplace__button {
+    display: flex;
+    align-items: center; /* Menyusun ikon secara vertikal di tengah */
+    justify-content: center; /* Menyusun ikon secara horizontal di tengah */
+    padding: 10px; /* Tambahkan padding jika diperlukan */
+}
+
+.marketplace__icon-wrapper {
+    width: 100px; /* Lebar maksimum wrapper */
+    height: 100px; /* Tinggi maksimum wrapper */
+    display: flex;
+    justify-content: center; /* Menyusun ikon secara horizontal di tengah */
+    align-items: center; /* Menyusun ikon secara vertikal di tengah */
+    overflow: hidden; /* Memastikan gambar tidak keluar dari wrapper */
+}
+
+.marketplace__icon {
+    max-width: 100%; /* Lebar maksimum ikon */
+    max-height: 100%; /* Tinggi maksimum ikon */
+    width: auto; /* Memastikan proporsi asli gambar terjaga */
+    height: auto; /* Memastikan proporsi asli gambar terjaga */
+    object-fit: contain; /* Memastikan gambar sesuai dalam kotak tanpa distorsi */
+}
+
+.sertifikat__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sertifikat__inti {
+    display: flex;
+    gap: 10px; /* Jarak antar tombol, sesuaikan sesuai kebutuhan */
+    justify-content: center; /* Menyusun tombol di tengah */
+    align-items: center; /* Menyusun tombol secara vertikal di tengah */
+}
+
+.sertifikat {
+    display: flex;
+    align-items: center; /* Menyusun ikon secara vertikal di tengah */
+    justify-content: center; /* Menyusun ikon secara horizontal di tengah */
+    padding: 10px; /* Tambahkan padding jika diperlukan */
+}
+
+.sertifikat__icon-wrapper {
+    width: 400px; /* Lebar maksimum wrapper */
+    height: 400px; /* Tinggi maksimum wrapper */
+    display: flex;
+    justify-content: center; /* Menyusun ikon secara horizontal di tengah */
+    align-items: center; /* Menyusun ikon secara vertikal di tengah */
+    overflow: hidden; /* Memastikan gambar tidak keluar dari wrapper */
+}
+
+.sertifikat__icon {
+    max-width: 100%; /* Lebar maksimum ikon */
+    max-height: 100%; /* Tinggi maksimum ikon */
+    width: auto; /* Memastikan proporsi asli gambar terjaga */
+    height: auto; /* Memastikan proporsi asli gambar terjaga */
+    object-fit: contain; /* Memastikan gambar sesuai dalam kotak tanpa distorsi */
+}
+
+
+.contact__container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact-under{
+    margin-bottom: 50px;
+}
+
+.section-title_marketplace__initial{
+    margin-bottom: 7px; 
+}
+
+.section-subtitle_marketplace__initial{
+    font-size:larger;
+    font-weight: 400;
+    color: #156419;
+}
+
+.map-container {
+    width: 30%;
+    height: 300px; /* Atur tinggi sesuai kebutuhan */
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.footer {
+    background-color: rgba(201, 201, 201, 0.8); /* Blurred background color */
+    color: #705656; /* Text color */
+    padding: 40px 0; /* Padding top and bottom */
+    backdrop-filter: blur(8px); /* Blurred effect */
+    font-size:large;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__content {
+    flex: 1 1 300px; /* Flex calculation for content */
+    margin-right: 20px; /* Right margin between content */
+}
+
+.footer__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer__description {
+    display: block;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.footer__social {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.footer__content {
+    margin-left: 30px;
+}
+
+.footer__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer__content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__copy {
+    padding-top: 50px;
+    text-align: center; /* Mengatur teks menjadi di tengah */
+}
+
+.sub-text {
+    color: #156419;
+}
+
+.custom-link {
+    color: inherit; /* Menggunakan warna teks default */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-weight: bold; /* Mengatur teks menjadi tebal */
+}
+.custom-link:hover {
+    color: #000; /* Mengubah warna teks saat di-hover, jika diinginkan */
+}
+
+/* Media queries untuk tampilan mobile */
+@media (max-width: 768px) {
+    .caption {
+        height: 300px; /* Sesuaikan tinggi caption untuk layar kecil */
+        font-size: large;
+        background-position: center;
+    }
+
+     .home img {
+        max-width: 100%; /* Membatasi lebar gambar */
+    }
+
+    .home__container {
+        flex-direction: column; /* Ubah tata letak menjadi kolom pada layar kecil */
+        text-align: center;
+    }
+
+    .home__data {
+        padding-right: 0; /* Hapus padding kanan */
+        margin-bottom: 20px;
+    }
+
+    .home__title {
+        font-size: 2em; /* Sesuaikan ukuran font title */
+    }
+
+    .home__subtitle {
+        font-size: 1.2em; /* Sesuaikan ukuran font subtitle */
+    }
+
+    .home__img {
+        max-width: 80%; /* Sesuaikan lebar gambar */
+        height: auto;
+    }
+
+    .card {
+        margin: 10px; /* Sesuaikan margin kartu */
+        padding: 10px;
+    }
+
+    .card-body {
+        padding: 10px; /* Sesuaikan padding card-body */
+        text-align: center; /* Pastikan teks tetap rata tengah */
+    }
+
+    .card-title {
+        font-size: 1.5em; /* Sesuaikan ukuran font title */
+    }
+
+    .card-subtitle {
+        font-size: 1em; /* Sesuaikan ukuran font subtitle */
+    }
+
+    .card-text {
+        font-size: 0.9em; /* Sesuaikan ukuran font text */
+        font-family: "DM Sans", sans-serif;
+        color: #222;
+    }
+
+    .card-img {
+        width: 80%; /* Sesuaikan lebar gambar */
+        margin-bottom: 10px; /* Tambahkan margin bawah */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    #menu p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 0.9em; /* Sesuaikan ukuran font text */
+    }
+
+    .contact__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact__button {
+        margin-top: 20px;
+    }
+
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .sertifikat__inti {
+        flex-direction: column; /* Mengubah layout menjadi kolom pada layar kecil */
+        gap: 5px; /* Jarak antar elemen */
+    }
+    
+    .sertifikat__icon-wrapper {
+        width: 250px; /* Lebar maksimum wrapper pada layar kecil */
+        height: 250px; /* Tinggi maksimum wrapper pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .sertifikat__icon-wrapper {
+        width: 250px; /* Lebar maksimum wrapper pada layar sangat kecil */
+        height: 250px; /* Tinggi maksimum wrapper pada layar sangat kecil */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .map-container {
+        width: 80%;
+        height: 250px; /* Adjust height if needed */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        width: 80%;
+        height: 250px; /* Adjust height if needed */
+    }
+}
